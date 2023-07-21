@@ -2,6 +2,11 @@
 devshell = "./devshell",
 
 [devshell]
+# programs.sops.enable = true;
+# programs.age.enable = true;
+# [[programs.terraform]]
+#  enable = true,
+#  plugins = ["aws"],
 packages = [
   "d2"
 ]
