@@ -1,0 +1,7 @@
+[[commands]]
+name = "hello-tenzir-devops"
+category = "devops"
+command = '''
+        echo \"hello world\"
+        '''
+help = "Hello world for testing"

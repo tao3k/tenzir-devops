@@ -1,0 +1,13 @@
+#+TITLE: README
+#+AUTHOR: GuangTao Zhang
+#+EMAIL: gtrunsec@hardenedlinux.org
+#+DATE: 2023-07-21 Fri 06:43
+
+
+* Concepts
+** auto-importing/merging
+
+- merging the user's schema from dir
+user dir: *./tenzir/schemas/sysmon.yaml*
+source: https://github.com/tenzir/tenzir/blob/main/schema/concepts/sysmon.yaml
+If the *sysmon.yaml* file exists within the user directory, then automatic merging the data with source and generating the final file into the dir of prj_spc.

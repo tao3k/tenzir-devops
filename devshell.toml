@@ -1,0 +1,7 @@
+[cellsFrom]
+devshell = "./devshell",
+
+[devshell]
+packages = [
+  "d2"
+]

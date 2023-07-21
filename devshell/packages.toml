@@ -1,0 +1,11 @@
+[devshell]
+packages = [
+  # read the doc from CLI
+  "glow",
+  "bat"
+]
+
+# Expose all the dependencies from a package to the environment.
+packagesFrom = [
+  "tenzir"
+]
