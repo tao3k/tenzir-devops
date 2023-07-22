@@ -20,6 +20,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: load the Image to local container register
+      - name: copy oci-image to the register
         run: |
           nix run ./#x86_64-linux.users.containers.default.copyToRegistry

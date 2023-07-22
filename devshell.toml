@@ -8,6 +8,4 @@ tasks = "/tasks"
 # [[programs.terraform]]
 #  enable = true,
 #  plugins = ["aws"],
-packages = [
-  "d2"
-]
+packages = ["d2"]

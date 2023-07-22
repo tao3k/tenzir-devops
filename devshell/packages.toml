@@ -4,7 +4,6 @@ packages = [
   "glow",
   "bat"
 ]
-
 # Expose all the dependencies from a package to the environment.
 # packagesFrom = [
 #   "tenzir"
