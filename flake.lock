@@ -1070,11 +1070,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1690065532,
-        "narHash": "sha256-O1hjP92I3xZUtN/pATNheOFTDRM/wsd1ueLX5PyoCrk=",
+        "lastModified": 1690065724,
+        "narHash": "sha256-8nevKPFGm0NLPMsh5s97MkXdnEGqbdVIiPiKHHEPR7A=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "d5534121add99f6fbee1e50429385aa0be60dc21",
+        "rev": "2751a29da42fd1b90ca864e78301fb6b6e362a77",
         "type": "github"
       },
       "original": {
