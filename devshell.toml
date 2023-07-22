@@ -1,5 +1,6 @@
 [cellsFrom]
-devshell = "./devshell",
+devshell = "/devshell"
+tasks = "/tasks"
 
 [devshell]
 # programs.sops.enable = true;

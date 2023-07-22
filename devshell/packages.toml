@@ -6,6 +6,6 @@ packages = [
 ]
 
 # Expose all the dependencies from a package to the environment.
-packagesFrom = [
-  "tenzir"
-]
+# packagesFrom = [
+#   "tenzir"
+# ]

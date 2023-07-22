@@ -1,8 +1,8 @@
 {
   description = "The users' interface to the Tenzir platform";
-  outputs = { self, tenzir-devops}@inputs: {
-    devShells.default = {};
-    # devShells.default = tenzir-devops.x86_64-linux.users.lib.mkDevShell ./.;
+  outputs = { self, tenzir-devops}@inputs:
+    (tenzir-devops.lib.mkStd ./.) // {
+    devShells = inputs.tenzir-devops.inputs.std.harvest inputs.self [["users" "shells"]];
   };
   inputs = {
     tenzir-devops.url = "github:gtrunsec/vast/devops?dir=nix/devops";
