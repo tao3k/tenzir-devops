@@ -17,7 +17,10 @@ By simply placing the supported configuration file formats in the corresponding 
 - [X] ~schemas~ -> dir -> ./tenzir/schemas/
 - [ ] ~terraform~ -> dir -> ./deploy/tf
   - nix(validator::terranix),hcl(validator::internal),json(overrideValues),nickel(validator::tf-ncl)
-- [ ] ~kubernets~ -> dir -> ./deploy/k8s -ts(validator::architect-k8s-template),yaml,nickel,nix,json(overrideValues)
+- [ ] ~kubernets~ -> dir -> ./deploy/k8s
+  - ts(validator::architect-k8s-template),yaml,nickel,nix,json(overrideValues)
+- [] ~secrets~ -> dir -> ./secrets
+  - envs(yaml/json), sops(GPG,ssh),age(ssh),vault(cloud),git-crypt
 
 
 Moreover, users have the flexibility to modify the structure of the related cells' paths by using the ~cellsFrom~ field in the ~./devshell.toml~.
