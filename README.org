@@ -7,13 +7,18 @@
 
 By simply placing the supported configuration file formats in the corresponding directory, the auto-importing mechanism will be triggered automatically.
 
-- devshell -> dir -> ./devshell
-  - nix,yaml
-- tasks -> dir -> ./devshell
-  - nix,json,yaml
-- schemas -> dir -> ./tenzir/schemas/
+- [X] ~devshell~ -> dir -> ./devshell
+  - nix,yaml(overrideOnly)
+- [X] ~tasks~ -> dir -> ./devshell
+  - nix,json(overrideOnly),yaml(overrideOnly)
+- [X] ~schemas~ -> dir -> ./tenzir/schemas/
+- [ ] ~terraform~ -> dir -> ./deploy/tf
+  - nix(terranix),hcl,json(overrideOnly)
+- [ ] ~kubernets~ -> dir -> ./deploy/k8s
+  - ts(architect-k8s-template),yaml,nickel,nix,json
 
-Moreover, users have the flexibility to modify the structure of the related cells' paths by using the "cellsFrom" field in the *./devshell.toml*.
+
+Moreover, users have the flexibility to modify the structure of the related cells' paths by using the ~cellsFrom~ field in the ~./devshell.toml~.
 
 * Getting stated
 
@@ -33,12 +38,12 @@ direnv allow
 * Concepts
 ** auto-importing/merging
 
-- user dir: *./tenzir/schemas/sysmon.yaml*
+- user dir: ~./tenzir/schemas/sysmon.yaml~
 - source: https://github.com/tenzir/tenzir/blob/main/schema/concepts/sysmon.yaml
 
-If the *sysmon.yaml* file exists within the user directory, then automatic merging the data with source and generating the final file into the "generated-sysmon.yaml".
+If the ~sysmon.yaml~ file exists within the user directory, then automatic merging the data with source and generating the final file into the ~generated-sysmon.yaml~.
 
-make sure, you have set the *source* and *data* fields correctly.
+make sure, you have set the ~source~ and ~data~ fields correctly.
 
 #+begin_src yaml
 # upstream's schema data
