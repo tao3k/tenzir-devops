@@ -11,14 +11,13 @@ By simply placing the supported configuration file formats in the corresponding 
 #+end_quote
 
 - [X] ~devshell~ -> dir -> ./cells/devshell
-  - nix,yaml(overrideOnly)
+  - nix,yaml
 - [X] ~tasks~ -> dir -> ./cells/tasks/tasks
-  - nix,json(overrideOnly),yaml(overrideOnly)
+  - nix,json,yaml
 - [X] ~schemas~ -> dir -> ./tenzir/schemas/
 - [ ] ~terraform~ -> dir -> ./deploy/tf
-  - nix(terranix),hcl,json(overrideOnly)
-- [ ] ~kubernets~ -> dir -> ./deploy/k8s
-  - ts(architect-k8s-template),yaml,nickel,nix,json
+  - nix(validator::terranix),hcl(validator::internal),json(overrideValues),nickel(validator::tf-ncl)
+- [ ] ~kubernets~ -> dir -> ./deploy/k8s -ts(validator::architect-k8s-template),yaml,nickel,nix,json(overrideValues)
 
 
 Moreover, users have the flexibility to modify the structure of the related cells' paths by using the ~cellsFrom~ field in the ~./devshell.toml~.
