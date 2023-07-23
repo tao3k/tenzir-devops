@@ -993,14 +993,18 @@
         "yants": "yants_4"
       },
       "locked": {
-        "lastModified": 1690100461,
-        "narHash": "sha256-wqW0GiaRLFjGg2lTPbLA6P5tZDeaJWdP+cQ18HShbEA=",
-        "type": "git",
-        "url": "file:///home/guangtao/ghq/github.com/divnix/std"
+        "lastModified": 1676694799,
+        "narHash": "sha256-PqvYBIQa9ZpjLznXF0f1zitPIHYwEScy9hbuxgSwHJY=",
+        "owner": "divnix",
+        "repo": "std",
+        "rev": "1264bbb6d7869d409e5a146957d170744d809006",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "file:///home/guangtao/ghq/github.com/divnix/std"
+        "owner": "divnix",
+        "repo": "std",
+        "rev": "1264bbb6d7869d409e5a146957d170744d809006",
+        "type": "github"
       }
     },
     "systems": {
@@ -1038,11 +1042,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1690103835,
-        "narHash": "sha256-CUlWw+5WAkorAdp+t7+zyT0SsI1xwpbbMJ2Ge0kzxjI=",
+        "lastModified": 1690104699,
+        "narHash": "sha256-hDyH+fhvyfpwHGsn3OzlyYYe6cLtevpukQItmOeh68Y=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "745bd3fb33f9057bc69bc7257ac704334e7e809a",
+        "rev": "92e09d797d57b2453541922fbb6ae857f7d8e0f2",
         "type": "github"
       },
       "original": {
