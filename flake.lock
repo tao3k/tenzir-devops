@@ -643,38 +643,6 @@
         "type": "github"
       }
     },
-    "nixago_4": {
-      "inputs": {
-        "flake-utils": [
-          "tenzir-devops",
-          "std-oci",
-          "flake-utils"
-        ],
-        "nixago-exts": [
-          "tenzir-devops",
-          "std-oci",
-          "blank"
-        ],
-        "nixpkgs": [
-          "tenzir-devops",
-          "std-oci",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1676075813,
-        "narHash": "sha256-X/aIT8Qc8UCqnxJvaZykx3CJ0ZnDFvO+dqp/7fglZWo=",
-        "owner": "nix-community",
-        "repo": "nixago",
-        "rev": "9cab4dde31ec2f2c05d702ea8648ce580664e906",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixago",
-        "type": "github"
-      }
-    },
     "nixlib": {
       "locked": {
         "lastModified": 1653180592,
@@ -1012,7 +980,11 @@
           "tenzir-devops",
           "n2c"
         ],
-        "nixago": "nixago_4",
+        "nixago": [
+          "tenzir-devops",
+          "std-ext",
+          "nixago"
+        ],
         "nixpkgs": [
           "tenzir-devops",
           "nixpkgs"
@@ -1021,18 +993,14 @@
         "yants": "yants_4"
       },
       "locked": {
-        "lastModified": 1676694799,
-        "narHash": "sha256-PqvYBIQa9ZpjLznXF0f1zitPIHYwEScy9hbuxgSwHJY=",
-        "owner": "divnix",
-        "repo": "std",
-        "rev": "1264bbb6d7869d409e5a146957d170744d809006",
-        "type": "github"
+        "lastModified": 1690100461,
+        "narHash": "sha256-wqW0GiaRLFjGg2lTPbLA6P5tZDeaJWdP+cQ18HShbEA=",
+        "type": "git",
+        "url": "file:///home/guangtao/ghq/github.com/divnix/std"
       },
       "original": {
-        "owner": "divnix",
-        "repo": "std",
-        "rev": "1264bbb6d7869d409e5a146957d170744d809006",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/guangtao/ghq/github.com/divnix/std"
       }
     },
     "systems": {
@@ -1070,11 +1038,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1690095927,
-        "narHash": "sha256-McV6DBcjlr1Fibm2JNyFfwQ4GXBDUzNYL5uN0sxJ6dk=",
+        "lastModified": 1690103835,
+        "narHash": "sha256-CUlWw+5WAkorAdp+t7+zyT0SsI1xwpbbMJ2Ge0kzxjI=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "19aaaabe59cd2184d0093e4a77777ecde15019c1",
+        "rev": "745bd3fb33f9057bc69bc7257ac704334e7e809a",
         "type": "github"
       },
       "original": {

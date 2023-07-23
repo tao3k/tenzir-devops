@@ -10,5 +10,6 @@
     };
   inputs = {
     tenzir-devops.url = "github:gtrunsec/vast/devops?dir=nix/devops";
+    # tenzir-devops.url = "/home/guangtao/ghq/github.com/tenzir/vast/nix/devops";
   };
 }

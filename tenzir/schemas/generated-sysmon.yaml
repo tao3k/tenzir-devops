@@ -1,4 +1,3 @@
-data:
 - concept:
     fields:
     - sysmon.extend.field_1

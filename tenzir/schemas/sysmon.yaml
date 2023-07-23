@@ -1,5 +1,7 @@
-- concept:
-    name: proc.guid
-    fields:
-      - sysmon.extend.field_1
-      - sysmon.extend.field_2
+source: "/schema/concepts/sysmon.yaml"
+data:
+  - concept:
+      name: proc.guid
+      fields:
+        - sysmon.extend.field_1
+        - sysmon.extend.field_2
