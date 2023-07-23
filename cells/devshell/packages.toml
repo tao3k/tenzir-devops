@@ -2,6 +2,7 @@
 packages = [
   # read the doc from CLI
   "glow",
+  "hello",
   "bat"
 ]
 # Expose all the dependencies from a package to the environment.
