@@ -6,10 +6,13 @@
 * Configuration languages or files
 
 By simply placing the supported configuration file formats in the corresponding directory, the auto-importing mechanism will be triggered automatically.
+#+begin_quote
+ We have a global command-line tool called ~std~ that allows users to query and execute various tasks.
+#+end_quote
 
-- [X] ~devshell~ -> dir -> ./devshell
+- [X] ~devshell~ -> dir -> ./cells/devshell
   - nix,yaml(overrideOnly)
-- [X] ~tasks~ -> dir -> ./devshell
+- [X] ~tasks~ -> dir -> ./cells/tasks/tasks
   - nix,json(overrideOnly),yaml(overrideOnly)
 - [X] ~schemas~ -> dir -> ./tenzir/schemas/
 - [ ] ~terraform~ -> dir -> ./deploy/tf

@@ -5,7 +5,7 @@ tmp/
 
 # ignore prj_spc
 /.data
-
+/.local
 # nixago: ignore-linked-files
 /lefthook.yml
 /.conform.yaml
