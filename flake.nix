@@ -18,5 +18,6 @@
   inputs = {
     tenzir-devops.url = "github:gtrunsec/vast/devops?dir=nix/devops";
     nixpkgs.follows = "tenzir-devops/nixpkgs";
+    # tenzir-devops.url = "/home/guangtao/ghq/github.com/tenzir/vast/nix/devops";
   };
 }

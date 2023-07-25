@@ -3,23 +3,30 @@
 #+EMAIL: gtrunsec@hardenedlinux.org
 #+DATE: 2023-07-21 Fri 06:43
 
+
+
+* Branches status
+
+- main: used to test the full features
+- template: init the template with minimal env
+
 * Configuration languages or files
 
-By simply placing the supported configuration file formats in the corresponding directory, the auto-importing mechanism will be triggered automatically.
+By simply placing the supported configuration formats or files in the corresponding folders, the auto-importing mechanism will be triggered automatically.
 #+begin_quote
  We have a global command-line tool called ~std~ that allows users to query and execute various tasks.
 #+end_quote
 
-- [X] ~devshell~ -> dir -> ./cells/devshell
+- [X] ~devshell~ -> path -> ./cells/devshell
   - nix,yaml
-- [X] ~tasks~ -> dir -> ./cells/tasks/tasks
+- [X] ~tasks~ -> path -> ./cells/tasks/tasks
   - nix,json,yaml
-- [X] ~schemas~ -> dir -> ./tenzir/schemas/
-- [ ] ~terraform~ -> dir -> ./deploy/tf
+- [X] ~schemas~ -> path -> ./tenzir/schemas/
+- [ ] ~terraform~ -> path -> ./deploy/tf
   - nix(validator::terranix),hcl(validator::internal),json(overrideValues),nickel(validator::tf-ncl)
-- [ ] ~kubernets~ -> dir -> ./deploy/k8s
+- [ ] ~kubernets~ -> path -> ./deploy/k8s
   - ts(validator::architect-k8s-template),yaml,nickel,nix,json(overrideValues)
-- [] ~secrets~ -> dir -> ./secrets
+- [] ~secrets~ -> path -> ./secrets
   - envs(yaml/json), sops(GPG,ssh),age(ssh),vault(cloud),git-crypt
 
 
@@ -49,7 +56,7 @@ direnv allow
 - source: https://github.com/tenzir/tenzir/blob/main/schema/concepts/sysmon.yaml
 - output -> dir -> RP_ROOT + "~/data/tenzir~
 
-The final output files are automatically generated and stored in the that dir.
+The final output files are automatically generated and stored in the that folder.
 
 If the ~sysmon.yaml~ file exists within the user directory, then automatic merging the data with source and generating the final file into the ~generated-sysmon.yaml~.
 
