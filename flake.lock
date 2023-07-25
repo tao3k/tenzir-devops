@@ -856,6 +856,10 @@
     },
     "root": {
       "inputs": {
+        "nixpkgs": [
+          "tenzir-devops",
+          "nixpkgs"
+        ],
         "tenzir-devops": "tenzir-devops"
       }
     },
@@ -1042,11 +1046,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1690105691,
-        "narHash": "sha256-NBLrNUOWhO2eC50auxFankifGQTfaJpLaoF+bA0HZH0=",
+        "lastModified": 1690262013,
+        "narHash": "sha256-zG22G8FIAn0+YIrT+aUb9T9/bm8Ywx3iretvvaTZpUI=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "87f1117c36ffd39e286c1204c5eda9a9c8a866fe",
+        "rev": "6ca886ab677219c6aa8aee2f674b6a4856e88489",
         "type": "github"
       },
       "original": {

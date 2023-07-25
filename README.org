@@ -25,11 +25,13 @@ By simply placing the supported configuration file formats in the corresponding 
 
 Moreover, users have the flexibility to modify the structure of the related cells' paths by using the ~cellsFrom~ field in the ~./devshell.toml~.
 
-* Getting stated
+* Getting started
 
 - with docker/podman
 #+begin_src bash
 docker pull ghcr.io/gtrunsec/tenzir-devshell-users:latest
+git clone https://github.com/GTrunSec/tenzir-users-devops-template
+cd tenzir-users-devops-template
 docker run --platform linux/amd64 -it -v "$(pwd):/work" --entrypoint bash ghcr.io/gtrunsec/tenzir-devshell-users:latest
 podman run --platform linux/amd64 -it -v "$(pwd):/work" --userns=keep-id --entrypoint bash ghcr.io/gtrunsec/tenzir-devshell-users:latest
 #+end_src
@@ -45,10 +47,13 @@ direnv allow
 
 - user dir: ~./tenzir/schemas/sysmon.yaml~
 - source: https://github.com/tenzir/tenzir/blob/main/schema/concepts/sysmon.yaml
+- output -> dir -> RP_ROOT + "~/data/tenzir~
+
+The final output files are automatically generated and stored in the that dir.
 
 If the ~sysmon.yaml~ file exists within the user directory, then automatic merging the data with source and generating the final file into the ~generated-sysmon.yaml~.
 
-make sure, you have set the ~source~ and ~data~ fields correctly.
+make sure, you have set the ~source~, ~data~ and ~output~ fields correctly.
 
 #+begin_src yaml
 # upstream's schema data

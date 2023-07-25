@@ -1,6 +1,7 @@
 [cellsFrom]
-devshell = "/cells/devshell"
-tasks = "/cells/tasks"
+devshell = "/devshell"
+tasks = "/tasks"
+configs = "/configs"
 schemas = "/tenzir/schemas"
 
 [devshell]
