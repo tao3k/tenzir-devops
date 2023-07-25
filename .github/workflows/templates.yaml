@@ -1,0 +1,30 @@
+name: "templates"
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_run:
+    workflows: ["OCI"]
+    types:
+      - completed
+jobs:
+  Sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: nixbuild/nix-quick-install-action@v25
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+
+      - name: init the template.default
+        run: |
+          mkdir -p ./template && cd ./template
+          nix flake init -t ..#templates.default
+
+      - name: Deploy template
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        with:
+          branch: template
+          folder: ./template
