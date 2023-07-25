@@ -17,9 +17,9 @@
       templates = (inputs.tenzir-devops.inputs.std.harvest inputs.self ["users" "lib"]).x86_64-linux.templates;
     };
   inputs = {
-    # tenzir-devops.url = "github:gtrunsec/vast/devops?dir=nix/devops";
+    tenzir-devops.url = "github:gtrunsec/vast/devops?dir=nix/devops";
     nixpkgs.follows = "tenzir-devops/nixpkgs";
-    tenzir-devops.url = "/home/guangtao/ghq/github.com/tenzir/vast/nix/devops";
+    # tenzir-devops.url = "/home/guangtao/ghq/github.com/tenzir/vast/nix/devops";
   };
   nixConfig = {
     extra-substituters = [""];

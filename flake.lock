@@ -1046,15 +1046,19 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1690267032,
-        "narHash": "sha256-7Tf3hfnqpMmz6yw6bmvYmZnhlZXwqRJKk2iBSS7uTVM=",
-        "type": "git",
-        "url": "file:///home/guangtao/ghq/github.com/tenzir/vast?dir=nix/devops"
+        "lastModified": 1690268961,
+        "narHash": "sha256-lMeCYq9xkEUVd5vMUu5fNKVHe1PxQwzcUGpMbjkDfPA=",
+        "owner": "gtrunsec",
+        "repo": "vast",
+        "rev": "922e91ee8666da2c76d3b37231eb69b24d18b745",
+        "type": "github"
       },
       "original": {
         "dir": "nix/devops",
-        "type": "git",
-        "url": "file:///home/guangtao/ghq/github.com/tenzir/vast?dir=nix/devops"
+        "owner": "gtrunsec",
+        "ref": "devops",
+        "repo": "vast",
+        "type": "github"
       }
     },
     "yants": {
