@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
   pull_request:
+
 jobs:
   nix-build:
     runs-on: ubuntu-latest

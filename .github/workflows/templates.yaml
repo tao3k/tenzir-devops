@@ -1,8 +1,5 @@
 name: "templates"
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_run:
     workflows: ["OCI"]
     types:
