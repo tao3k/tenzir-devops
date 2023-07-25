@@ -7,5 +7,8 @@ makeScript {
   };
   searchPaths.bin = [nixpkgs.hello];
   searchPaths.source = [];
-  entrypoint = "hello --help echo $a";
+  entrypoint = ''
+    hello --help
+    echo $a
+  '';
 }
