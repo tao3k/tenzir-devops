@@ -1,8 +1,9 @@
-[cellsFrom]
-devshell = "/devshell"
+[cellBlocks]
+shellProfiles = "/shellProfiles" #toml,nix
+shell = "/shell" # nix
 tasks = "/tasks"
-configs = "/configs"
-schemas = "/tenzir/schemas"
+configs = "/configs" #json,toml,yaml
+schemas = "/schemas" #json,toml,yaml
 
 [devshell]
 # programs.sops.enable = true;
