@@ -2,7 +2,6 @@
     fields:
     - sysmon.extend.field_1
     - sysmon.extend.field_2
-    - sysmon.extend.field_3
     - sysmon.CreateRemoteThread.SourceProcessGuid
     - sysmon.CreateRemoteThread.TargetProcessGuid
     - sysmon.FileCreate.ProcessGuid

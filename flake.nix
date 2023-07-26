@@ -6,15 +6,11 @@
     ...
   } @ inputs:
     (
-      tenzir-devops.lib.mkStd
-      {
-        inherit inputs;
-        cellsFrom = ./cells;
-      }
+      tenzir-devops.lib.mkStd {inherit inputs;}
     )
     // {
-      devShells = inputs.tenzir-devops.inputs.std.harvest inputs.self [["users" "shells"]];
-      templates = (inputs.tenzir-devops.inputs.std.harvest inputs.self ["users" "lib"]).x86_64-linux.templates;
+      devShells = inputs.tenzir-devops.inputs.std.harvest inputs.self [["dev" "shells"]];
+      templates = (inputs.tenzir-devops.inputs.std.harvest inputs.self ["dev" "lib"]).x86_64-linux.templates;
     };
   inputs = {
     tenzir-devops.url = "github:gtrunsec/vast/devops?dir=nix/devops";

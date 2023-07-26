@@ -6,4 +6,3 @@ data:
       fields:
         - sysmon.extend.field_1
         - sysmon.extend.field_2
-        - sysmon.extend.field_3
