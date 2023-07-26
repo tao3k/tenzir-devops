@@ -23,4 +23,4 @@ jobs:
 
       - name: copy oci-image to the register
         run: |
-          nix run ./#x86_64-linux.users.containers.default.copyToRegistry
+          nix run ./#x86_64-linux.dev.containers.default.copyToRegistry
