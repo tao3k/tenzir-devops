@@ -1,0 +1,7 @@
+{
+  "searchPaths": {
+    "bin": ["nixpkgs"],
+    "source": ["./env"]
+  },
+  "entrypoint": "./entrypoint.sh"
+}
