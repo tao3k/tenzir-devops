@@ -172,8 +172,18 @@
           "flops",
           "haumea"
         ],
-        "nixlib": "nixlib_2",
-        "yants": "yants_2"
+        "nixlib": [
+          "tenzir-devops",
+          "std-ext",
+          "flops",
+          "nixlib"
+        ],
+        "yants": [
+          "tenzir-devops",
+          "std-ext",
+          "flops",
+          "yants"
+        ]
       },
       "locked": {
         "lastModified": 1686862774,
@@ -364,20 +374,15 @@
         "call-flake": "call-flake_2",
         "dmerge": "dmerge_2",
         "haumea": "haumea_2",
-        "namaka": [
-          "tenzir-devops",
-          "std-ext",
-          "flops"
-        ],
-        "nixlib": "nixlib_3",
-        "yants": "yants_3"
+        "nixlib": "nixlib_2",
+        "yants": "yants_2"
       },
       "locked": {
-        "lastModified": 1690756542,
-        "narHash": "sha256-eccIaIvZURGVK9RfENKfK5pXH9OD3D3L2O3cEJzyCFI=",
+        "lastModified": 1691319618,
+        "narHash": "sha256-2bzDIZNahyiwUnHCnmLhbyTTMX4hgZ1HlRQNqff2jCk=",
         "owner": "gtrunsec",
         "repo": "flops",
-        "rev": "c734ae844ea28bd951bcb78c1d8a62c764db0946",
+        "rev": "4cd9339adb5f4bf6ded2f8cb32c0cb9bc299fc99",
         "type": "github"
       },
       "original": {
@@ -641,21 +646,6 @@
       }
     },
     "nixlib_2": {
-      "locked": {
-        "lastModified": 1681001314,
-        "narHash": "sha256-5sDnCLdrKZqxLPK4KA8+f4A3YKO/u6ElpMILvX0g72c=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "367c0e1086a4eb4502b24d872cea2c7acdd557f4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "type": "github"
-      }
-    },
-    "nixlib_3": {
       "locked": {
         "lastModified": 1689469483,
         "narHash": "sha256-2SBhY7rZQ/iNCxe04Eqxlz9YK9KgbaTMBssq3/BgdWY=",
@@ -925,11 +915,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690922408,
-        "narHash": "sha256-TPf6NOcJ0RCeLc1troi8/1jPjnGmIhhh8wx65p/Yj6w=",
+        "lastModified": 1691319692,
+        "narHash": "sha256-n2c/ULAPojGkQz5itVB9g7D1gaLxAJJ2tGaIpJGBfEE=",
         "owner": "gtrunsec",
         "repo": "std-ext",
-        "rev": "7910c5a9010d68c92eb47a6bd8d7442af235c9e5",
+        "rev": "db6280ad2105c94813ddeedc9a9fe5b12937079e",
         "type": "github"
       },
       "original": {
@@ -974,7 +964,7 @@
           "nixpkgs"
         ],
         "paisano": "paisano_2",
-        "yants": "yants_4"
+        "yants": "yants_3"
       },
       "locked": {
         "lastModified": 1691316560,
@@ -1026,11 +1016,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1691318260,
-        "narHash": "sha256-2vAla/jSce/3jM8VXs8DCpksF5BHW7ZVTdxa/p7eVW4=",
+        "lastModified": 1691319837,
+        "narHash": "sha256-1lw5aqvlYmgmS2y2DSmJtrPu3SBdgsYmBkL5G2b1hLU=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "f9828709b387141ebc326212a29cd561c6abb1bc",
+        "rev": "3a05570b177dcda4f38391117a67b41e6d7fcb74",
         "type": "github"
       },
       "original": {
@@ -1066,30 +1056,6 @@
     },
     "yants_2": {
       "inputs": {
-        "nixpkgs": [
-          "tenzir-devops",
-          "std-ext",
-          "flops",
-          "dmerge",
-          "nixlib"
-        ]
-      },
-      "locked": {
-        "lastModified": 1677285314,
-        "narHash": "sha256-hlAcg2514zKrPu8jn24BUsIjjvXvCLdw1jvKgBTpqko=",
-        "owner": "divnix",
-        "repo": "yants",
-        "rev": "9eab24b273ce021406c852166c216b86e2bb4ec4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "yants",
-        "type": "github"
-      }
-    },
-    "yants_3": {
-      "inputs": {
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
@@ -1106,7 +1072,7 @@
         "type": "github"
       }
     },
-    "yants_4": {
+    "yants_3": {
       "inputs": {
         "nixpkgs": [
           "tenzir-devops",
