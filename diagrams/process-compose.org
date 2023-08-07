@@ -1,12 +1,16 @@
+:PROPERTIES:
+:ID:       0b956d22-59b7-479d-bef2-a3ba975f8d40
+:header-args: :noweb tangle :comments noweb :exports both
+:END:
 #+TITLE: process-compose
 #+AUTHOR: GuangTao Zhang
 #+EMAIL: gtrunsec@hardenedlinux.org
 #+DATE: 2023-08-07 Mon 02:43
-:header-args: :noweb tangle :comments noweb :exports both
 
 
+* dd
 #+BEGIN_SRC d2 :file images/process-compose-tenzir.png :flags --theme 200 :exports both :tangle (concat (org-entry-get nil "PRJ-DIR" t) "process-compose-tenzir.d2")
-#!/usr/bin/env d2 --theme 200
+# !/usr/bin/env d2 --theme 200
 #
 title: {
   label: process-compose tenzir
@@ -16,7 +20,23 @@ title: {
   style.underline: true
 }
 
-tenzir-node -> tenzir-web
+process-compose: Process Compose {
+  tenzir: Tenzir {
+    node -> web
+  }
+
+  data-science: Data Science {
+    jupyterlab
+  }
+
+  publisher: Publisher {
+    notebook -> quarto
+  }
+
+  data-science.jupyterlab -> publisher.notebook
+
+  data-science
+}
 #+END_SRC
 
 #+RESULTS:

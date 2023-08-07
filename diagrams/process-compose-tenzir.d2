@@ -1,0 +1,29 @@
+# [[file:process-compose.org::*dd][dd:1]]
+# !/usr/bin/env d2 --theme 200
+#
+title: {
+  label: process-compose tenzir
+  near: top-center
+  shape: text
+  style.font-size: 40
+  style.underline: true
+}
+
+process-compose: Process Compose {
+  tenzir: Tenzir {
+    node -> web
+  }
+
+  data-science: Data Science {
+    jupyterlab
+  }
+
+  publisher: Publisher {
+    notebook -> quarto
+  }
+
+  data-science.jupyterlab -> publisher.notebook
+
+  data-science
+}
+# dd:1 ends here
