@@ -22,6 +22,7 @@ By simply placing the supported configuration formats or files in the correspond
 - [X] ~tasks~ -> path -> ./cells/tasks/tasks
   - nix,json,yaml
 - [X] ~schemas~ -> path -> ./tenzir/schemas/
+  - nix,yaml,json
 - [ ] ~terraform~ -> path -> ./deploy/tf
   - nix(validator::terranix),hcl(validator::internal),json(overrideValues),nickel(validator::tf-ncl)
 - [ ] ~kubernets~ -> path -> ./deploy/k8s
