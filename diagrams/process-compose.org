@@ -8,7 +8,8 @@
 #+DATE: 2023-08-07 Mon 02:43
 
 
-* dd
+
+* init Jobs
 #+BEGIN_SRC d2 :file images/process-compose-tenzir.png :flags --theme 200 :exports both :tangle (concat (org-entry-get nil "PRJ-DIR" t) "process-compose-tenzir.d2")
 # !/usr/bin/env d2 --theme 200
 #
@@ -35,7 +36,7 @@ process-compose: Process Compose {
 
   data-science.jupyterlab -> publisher.notebook
 
-  data-science
+  tenzir -> data-science
 }
 #+END_SRC
 
