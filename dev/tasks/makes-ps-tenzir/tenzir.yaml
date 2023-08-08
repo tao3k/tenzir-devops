@@ -1,0 +1,6 @@
+tenzir:
+  connection-retry-delay: 3s
+  connection-timeout: 5m
+  db-directory: .data/tenzir/tenzir.db
+  endpoint: 127.0.0.1:5158
+  log-file: .data/tenzir/server.log

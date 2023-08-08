@@ -1,10 +1,15 @@
 makeScript {
   name = "process-compose-tenzir";
-  searchPaths.bin = [
-    tenzir-devops.packages.ps-tenzir
-  ];
+  searchPaths.bin = [];
   searchPaths.source = [
     ./env
+    (makeEnvVars {
+      name = "configs";
+      mapping = {
+        tenzirConfig = ./tenzir.yaml;
+        extraWebFlags = "--bind=127.0.0.1";
+      };
+    })
   ];
   entrypoint = ''
     # automatically export all variables
