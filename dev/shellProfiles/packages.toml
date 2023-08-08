@@ -3,10 +3,9 @@ packages = [
   # read the doc from CLI
   "glow",
   "d2",
-  "vast-static",
   "bat"
 ]
 # Expose all the dependencies from a package to the environment.
 # packagesFrom = [
-#   "tenzir"
+#   "vast"
 # ]
