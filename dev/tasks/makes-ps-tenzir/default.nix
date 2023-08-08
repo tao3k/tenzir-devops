@@ -14,6 +14,8 @@ makeScript {
   entrypoint = ''
     # automatically export all variables
     set -a
-    ${nixpkgs.lib.getExe tenzir-devops.packages.ps-tenzir}
+    # keep the running directory in the top-level of git
+    cd $PRJ_ROOT
+    ${nixpkgs.lib.getExe tenzir-devops.packages.ps-tenzir-users}
   '';
 }
