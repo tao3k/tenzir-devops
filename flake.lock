@@ -39,21 +39,6 @@
         "type": "github"
       }
     },
-    "blank_2": {
-      "locked": {
-        "lastModified": 1625557891,
-        "narHash": "sha256-O8/MWsPBGhhyPoPLHZAuoZiiHo9q6FLlEeIDEXuj6T4=",
-        "owner": "divnix",
-        "repo": "blank",
-        "rev": "5a5d2684073d9f563072ed07c871d577a6c614a8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "blank",
-        "type": "github"
-      }
-    },
     "call-flake": {
       "locked": {
         "lastModified": 1687380775,
@@ -95,33 +80,6 @@
         "owner": "numtide",
         "repo": "devshell",
         "rev": "f9238ec3d75cefbb2b42a44948c4e8fb1ae9a205",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "devshell",
-        "type": "github"
-      }
-    },
-    "devshell_2": {
-      "inputs": {
-        "flake-utils": [
-          "tenzir-devops",
-          "std-oci",
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "tenzir-devops",
-          "std-oci",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1663445644,
-        "narHash": "sha256-+xVlcK60x7VY1vRJbNUEAHi17ZuoQxAIH4S4iUFUGBA=",
-        "owner": "numtide",
-        "repo": "devshell",
-        "rev": "e3dc3e21594fe07bdb24bdf1c8657acaa4cb8f66",
         "type": "github"
       },
       "original": {
@@ -196,33 +154,6 @@
       "original": {
         "owner": "divnix",
         "repo": "dmerge",
-        "type": "github"
-      }
-    },
-    "dmerge_3": {
-      "inputs": {
-        "nixlib": [
-          "tenzir-devops",
-          "std-oci",
-          "nixpkgs"
-        ],
-        "yants": [
-          "tenzir-devops",
-          "std-oci",
-          "yants"
-        ]
-      },
-      "locked": {
-        "lastModified": 1659548052,
-        "narHash": "sha256-fzI2gp1skGA8mQo/FBFrUAtY0GQkAIAaV/V127TJPyY=",
-        "owner": "divnix",
-        "repo": "data-merge",
-        "rev": "d160d18ce7b1a45b88344aa3f13ed1163954b497",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "data-merge",
         "type": "github"
       }
     },
@@ -353,21 +284,6 @@
         "type": "github"
       }
     },
-    "flake-utils_7": {
-      "locked": {
-        "lastModified": 1659877975,
-        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "flops": {
       "inputs": {
         "POP": "POP",
@@ -439,28 +355,6 @@
           "tenzir-devops",
           "std",
           "haumea",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1669263024,
-        "narHash": "sha256-E/+23NKtxAqYG/0ydYgxlgarKnxmDbg6rCMWnOBqn9Q=",
-        "owner": "divnix",
-        "repo": "incl",
-        "rev": "ce7bebaee048e4cd7ebdb4cee7885e00c4e2abca",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "incl",
-        "type": "github"
-      }
-    },
-    "incl_2": {
-      "inputs": {
-        "nixlib": [
-          "tenzir-devops",
-          "std-oci",
           "nixpkgs"
         ]
       },
@@ -737,21 +631,6 @@
         "type": "github"
       }
     },
-    "nosys_2": {
-      "locked": {
-        "lastModified": 1668010795,
-        "narHash": "sha256-JBDVBnos8g0toU7EhIIqQ1If5m/nyBqtHhL3sicdPwI=",
-        "owner": "divnix",
-        "repo": "nosys",
-        "rev": "feade0141487801c71ff55623b421ed535dbdefa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "nosys",
-        "type": "github"
-      }
-    },
     "paisano": {
       "inputs": {
         "call-flake": "call-flake",
@@ -795,34 +674,6 @@
         "owner": "paisano-nix",
         "ref": "0.1.1",
         "repo": "tui",
-        "type": "github"
-      }
-    },
-    "paisano_2": {
-      "inputs": {
-        "nixpkgs": [
-          "tenzir-devops",
-          "std-oci",
-          "nixpkgs"
-        ],
-        "nosys": "nosys_2",
-        "yants": [
-          "tenzir-devops",
-          "std-oci",
-          "yants"
-        ]
-      },
-      "locked": {
-        "lastModified": 1676683211,
-        "narHash": "sha256-5pkyVT4UF89QhEGH/vb7JgbGsOW76bTDtdNETUJtAqA=",
-        "owner": "divnix",
-        "repo": "paisano",
-        "rev": "63b36b54d5368722e386e16f8e0827dc75165f06",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "paisano",
         "type": "github"
       }
     },
@@ -884,15 +735,16 @@
         "yants": "yants"
       },
       "locked": {
-        "lastModified": 1689337213,
-        "narHash": "sha256-qa0B38ihDW1MuAshwgvlbkk3CgheWlvYr35oMpDrxJs=",
-        "owner": "divnix",
+        "lastModified": 1691564643,
+        "narHash": "sha256-plyk6QADwnBV+PNKSL+qpxzPbEZAQN/pjucMftD53zQ=",
+        "owner": "gtrunsec",
         "repo": "std",
-        "rev": "17dc4eb9587517397dad00617b020769fece3cfe",
+        "rev": "5dbab4f1e49c94eaf6a0a5cf787bc18db661605f",
         "type": "github"
       },
       "original": {
-        "owner": "divnix",
+        "owner": "gtrunsec",
+        "ref": "mkDevOCI",
         "repo": "std",
         "type": "github"
       }
@@ -928,59 +780,6 @@
         "type": "github"
       }
     },
-    "std-oci": {
-      "inputs": {
-        "arion": [
-          "tenzir-devops",
-          "std-oci",
-          "blank"
-        ],
-        "blank": "blank_2",
-        "devshell": "devshell_2",
-        "dmerge": "dmerge_3",
-        "flake-utils": "flake-utils_7",
-        "incl": "incl_2",
-        "makes": [
-          "tenzir-devops",
-          "std-oci",
-          "blank"
-        ],
-        "microvm": [
-          "tenzir-devops",
-          "std-oci",
-          "blank"
-        ],
-        "n2c": [
-          "tenzir-devops",
-          "n2c"
-        ],
-        "nixago": [
-          "tenzir-devops",
-          "std-ext",
-          "nixago"
-        ],
-        "nixpkgs": [
-          "tenzir-devops",
-          "nixpkgs"
-        ],
-        "paisano": "paisano_2",
-        "yants": "yants_3"
-      },
-      "locked": {
-        "lastModified": 1691357392,
-        "narHash": "sha256-7BiQyfCE0rRBXU1TECSsFt25C8tYkiVP/yXE+rl1dVg=",
-        "owner": "gtrunsec",
-        "repo": "std",
-        "rev": "15f9545da1d800212a0fa8ca8ccb0b60794fb5c3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gtrunsec",
-        "ref": "mkDevOCI",
-        "repo": "std",
-        "type": "github"
-      }
-    },
     "systems": {
       "locked": {
         "lastModified": 1681028828,
@@ -1011,16 +810,15 @@
           "nixpkgs"
         ],
         "std": "std",
-        "std-ext": "std-ext",
-        "std-oci": "std-oci"
+        "std-ext": "std-ext"
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1691492090,
-        "narHash": "sha256-p8/ybRAL/Tmev54Zd3UKRyvop4JuJgD7pi9zhFPcOyw=",
+        "lastModified": 1691565070,
+        "narHash": "sha256-tvEZ5mrVFF72oW7gg+fmYCi5CTVReTOsvjvYpEtjshU=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "3add8e933d01ccce81b8f42905d685785522fe7d",
+        "rev": "f5e31d9e8b77d4d32fbe6fec1b3d198a86ba1f17",
         "type": "github"
       },
       "original": {
@@ -1064,28 +862,6 @@
         "owner": "divnix",
         "repo": "yants",
         "rev": "8f0da0dba57149676aa4817ec0c880fbde7a648d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "divnix",
-        "repo": "yants",
-        "type": "github"
-      }
-    },
-    "yants_3": {
-      "inputs": {
-        "nixpkgs": [
-          "tenzir-devops",
-          "std-oci",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1667096281,
-        "narHash": "sha256-wRRec6ze0gJHmGn6m57/zhz/Kdvp9HS4Nl5fkQ+uIuA=",
-        "owner": "divnix",
-        "repo": "yants",
-        "rev": "d18f356ec25cb94dc9c275870c3a7927a10f8c3c",
         "type": "github"
       },
       "original": {
