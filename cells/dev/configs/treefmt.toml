@@ -1,3 +1,0 @@
-[formatter.prettier]
-command = "prettier"
-excludes = ["generated-*.yaml"]

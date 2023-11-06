@@ -1,4 +1,4 @@
-cellsFrom = "/cells"
+cellsFrom = "/units/cells"
 
 [devshell]
 # programs.sops.enable = true;
