@@ -9,8 +9,8 @@
 
 
 
-* init Jobs
-#+BEGIN_SRC d2 :file images/process-compose-tenzir.png :flags --theme 200 :exports both :tangle (concat (org-entry-get nil "PRJ-DIR" t) "process-compose-tenzir.d2")
+* tenzir
+#+BEGIN_SRC d2 :file images/process-compose-tenzir.svg :flags --theme 200 :exports both :tangle (concat (org-entry-get nil "PRJ-DIR" t) "process-compose-tenzir.d2")
 # !/usr/bin/env d2 --theme 200
 #
 title: {
@@ -41,4 +41,4 @@ process-compose: Process Compose {
 #+END_SRC
 
 #+RESULTS:
-[[file:images/process-compose-tenzir.png]]
+[[file:images/process-compose-tenzir.svg]]

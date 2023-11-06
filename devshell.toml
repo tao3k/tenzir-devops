@@ -1,9 +1,4 @@
-[cellBlocks]
-shellProfiles = "/shellProfiles" #toml,nix
-shell = "/shell" # nix
-tasks = "/tasks"
-configs = "/configs" #json,toml,yaml
-schemas = "/schemas" #json,toml,yaml
+cellsFrom = "/units/cells"
 
 [devshell]
 # programs.sops.enable = true;

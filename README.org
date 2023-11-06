@@ -12,23 +12,27 @@
 
 * Configuration languages or files
 
-By simply placing the supported configuration formats or files in the corresponding folders, the auto-importing mechanism will be triggered automatically.
+By simply placing the supported configuration formats or files in the corresponding folders, the auto-importing mechanism will be triggered.
 #+begin_quote
  We have a global command-line tool called ~std~ that allows users to query and execute various tasks.
 #+end_quote
 
-- [X] ~devshell~ -> path -> ./cells/devshell
-  - nix,yaml
-- [X] ~tasks~ -> path -> ./cells/tasks/tasks
-  - nix,json,yaml
-- [X] ~schemas~ -> path -> ./tenzir/schemas/
-  - nix,yaml,json
-- [ ] ~terraform~ -> path -> ./deploy/tf
-  - nix(validator::terranix),hcl(validator::internal),json(overrideValues),nickel(validator::tf-ncl)
-- [ ] ~kubernets~ -> path -> ./deploy/k8s
-  - ts(validator::architect-k8s-template),yaml,nickel,nix,json(overrideValues)
-- [] ~secrets~ -> path -> ./secrets
-  - envs(yaml/json), sops(GPG,ssh),age(ssh),vault(cloud),git-crypt
++ units (dirs)
+  1) cells(std&nix) A DevOps framework for the SDLC with the power of Nix and Flakes. Good for keeping deadlines!
+    - [X] ~devshell~ -> path -> ./cells/devshell
+      - nix,yaml
+    - [X] ~tasks~ -> path -> ./cells/tasks/tasks
+      - nix,json,yaml
+    - [X] ~schemas~ -> path -> ./tenzir/schemas/
+      - nix,yaml,json
+    - [ ] ~terraform~ -> path -> ./deploy/tf
+      - nix(validator::terranix),hcl(validator::internal),json(overrideValues),nickel(validator::tf-ncl)
+    - [ ] ~kubernets~ -> path -> ./deploy/k8s
+      - ts(validator::architect-k8s-template),yaml,nickel,nix,json(overrideValues)
+    - [] ~secrets~ -> path -> ./secrets
+      - envs(yaml/json), sops(GPG,ssh),age(ssh),vault(cloud),git-crypt
+
+  2) nickel: Introducing the experimental incorporation of Nickel into security dataflow.
 
 
 Moreover, users have the flexibility to modify the structure of the related cells' paths by using the ~cellsFrom~ field in the ~./devshell.toml~.
