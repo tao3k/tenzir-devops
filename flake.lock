@@ -228,11 +228,11 @@
         "yants": "yants"
       },
       "locked": {
-        "lastModified": 1699224044,
-        "narHash": "sha256-4gcOHdPINNRlA3OmNVYn+qtWuLeG10N2CWi50R4eUGw=",
+        "lastModified": 1699270012,
+        "narHash": "sha256-izzsLl21YKYRv44bjiJgx7+BTViiB/q6cPD0j7vd7+s=",
         "owner": "gtrunsec",
         "repo": "flops",
-        "rev": "4aff40202cf1db539700d266636a6626b99157f9",
+        "rev": "9821cfc20ea0a7179576a99576d25f6ce31c2177",
         "type": "github"
       },
       "original": {
@@ -449,11 +449,11 @@
         "flops": "flops"
       },
       "locked": {
-        "lastModified": 1699264782,
-        "narHash": "sha256-XT1QYSwwNhD8F6Uivg+i8zHCmP1LUl3F3ppdIcKnVug=",
+        "lastModified": 1699270133,
+        "narHash": "sha256-AS/w3i6zKiGs+u9t4B9dMbnLnGoRMPbEKqPFrU3uRVw=",
         "owner": "gtrunsec",
         "repo": "omnibus",
-        "rev": "3d55c5a791003a47eed518b19cfe6b642aa436d6",
+        "rev": "4afa8d88956fe14b8c0a38006eccd54f432ff195",
         "type": "github"
       },
       "original": {
@@ -623,11 +623,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1699266274,
-        "narHash": "sha256-bj3gvx7YQdF+1Tyk55eRGM0WhJVFPy4M1NPmwna6OLo=",
+        "lastModified": 1699270317,
+        "narHash": "sha256-UxRJBS1rU4iD/MZhB2SjjjiEz0f+vty0b+0z1Q0YzbY=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "bd5be668187964a9fd3f4895c19a80da7d4d526c",
+        "rev": "54b74fa23aa5b1af59ebbb26949debeea192834e",
         "type": "github"
       },
       "original": {
