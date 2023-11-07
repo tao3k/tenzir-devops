@@ -2,7 +2,10 @@
   description = "The users' interface to the Tenzir platform";
   outputs =
     { self, tenzir-devops, ... }@inputs:
-    (tenzir-devops.lib.mkStd { inherit inputs; })
+    (tenzir-devops.lib.mkStd {
+      inherit inputs;
+      projectDir = ./.;
+    })
     // {
       devShells = inputs.tenzir-devops.inputs.std.harvest inputs.self [
         [

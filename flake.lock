@@ -140,8 +140,7 @@
         "nixlib": [
           "tenzir-devops",
           "std",
-          "haumea",
-          "nixpkgs"
+          "lib"
         ],
         "yants": [
           "tenzir-devops",
@@ -266,7 +265,11 @@
     },
     "haumea_2": {
       "inputs": {
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": [
+          "tenzir-devops",
+          "std",
+          "lib"
+        ]
       },
       "locked": {
         "lastModified": 1685133229,
@@ -288,8 +291,7 @@
         "nixlib": [
           "tenzir-devops",
           "std",
-          "haumea",
-          "nixpkgs"
+          "lib"
         ]
       },
       "locked": {
@@ -303,6 +305,21 @@
       "original": {
         "owner": "divnix",
         "repo": "incl",
+        "type": "github"
+      }
+    },
+    "lib": {
+      "locked": {
+        "lastModified": 1694306727,
+        "narHash": "sha256-26fkTOJOI65NOTNKFvtcJF9mzzf/kK9swHzfYt1Dl6Q=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "c30b6a84c0b84ec7aecbe74466033facc9ed103f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
         "type": "github"
       }
     },
@@ -414,21 +431,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
-      "locked": {
-        "lastModified": 1681001314,
-        "narHash": "sha256-5sDnCLdrKZqxLPK4KA8+f4A3YKO/u6ElpMILvX0g72c=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "367c0e1086a4eb4502b24d872cea2c7acdd557f4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "type": "github"
-      }
-    },
     "nosys": {
       "locked": {
         "lastModified": 1668010795,
@@ -449,11 +451,11 @@
         "flops": "flops"
       },
       "locked": {
-        "lastModified": 1699309762,
-        "narHash": "sha256-S/STsMU+WqhBBCpIHu30pg/MczRHBB3xy7mXfXac09E=",
+        "lastModified": 1699335567,
+        "narHash": "sha256-+fQWoBgV/H9A4b3VxyjRAC3AJIRz/iO5OfyM/YQVfwk=",
         "owner": "gtrunsec",
         "repo": "omnibus",
-        "rev": "0688bed7ae9c61ed10bab7d9483289272864f50a",
+        "rev": "a7ba8ced8fdf729aa6cc6cbc955298a30f1b7174",
         "type": "github"
       },
       "original": {
@@ -478,11 +480,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1688099125,
-        "narHash": "sha256-j6LMz00orEKZrQb14wRRw7kMLm+aj7zBJt05AY4UcRI=",
+        "lastModified": 1693982790,
+        "narHash": "sha256-WTZYlqGUjzzz/PSzcvjEZz2kkwYSXObjeQVrFBaqa2Y=",
         "owner": "paisano-nix",
         "repo": "core",
-        "rev": "10270dc46532c947de473ee88c8f5a3346a396fb",
+        "rev": "3e897a19418361ece34841105122ed4f9379ca96",
         "type": "github"
       },
       "original": {
@@ -494,16 +496,16 @@
     "paisano-tui": {
       "flake": false,
       "locked": {
-        "lastModified": 1681847764,
-        "narHash": "sha256-mdd7PJW1BZvxy0cIKsPfAO+ohVl/V7heE5ZTAHzTdv8=",
+        "lastModified": 1694014205,
+        "narHash": "sha256-u0+T6vMznzfjDMUd01ZXQsrQPMEhMjrQwUPTFsPBR1k=",
         "owner": "paisano-nix",
         "repo": "tui",
-        "rev": "3096bad91cae73ab8ab3367d31f8a143d248a244",
+        "rev": "587ab9fd07bd969d59df73bfe527b5f8a4e752d1",
         "type": "github"
       },
       "original": {
         "owner": "paisano-nix",
-        "ref": "0.1.1",
+        "ref": "0.2.0",
         "repo": "tui",
         "type": "github"
       }
@@ -532,6 +534,7 @@
         "dmerge": "dmerge_2",
         "haumea": "haumea_2",
         "incl": "incl",
+        "lib": "lib",
         "makes": [
           "tenzir-devops",
           "std",
@@ -564,11 +567,11 @@
         "yants": "yants_2"
       },
       "locked": {
-        "lastModified": 1692861655,
-        "narHash": "sha256-NVScyi+Gd7lf5bcH8vysGSqESNiZGrDgaxXY5KdO3iA=",
+        "lastModified": 1699009342,
+        "narHash": "sha256-ch4MN4mFBBzPmEra5u9Tqj3JyWpt7cTA4z1jkY8DsfQ=",
         "owner": "divnix",
         "repo": "std",
-        "rev": "3ce88a33db33ae48ec0081f717e4f035812c3755",
+        "rev": "403fd2a949c60fc358be4f7d7ecfb435960b8464",
         "type": "github"
       },
       "original": {
@@ -623,11 +626,11 @@
       },
       "locked": {
         "dir": "nix/devops",
-        "lastModified": 1699310189,
-        "narHash": "sha256-G09LjVIcT6NHhbkL0lqnIRLfORwXURVBQe2k+qCLtv0=",
+        "lastModified": 1699340999,
+        "narHash": "sha256-2FtlQpwjEpbkbXSghsGCXC1hlns31mRD8HKgCkrHZew=",
         "owner": "gtrunsec",
         "repo": "vast",
-        "rev": "f5543c556085bf2740191a23ab656c4fbb53d258",
+        "rev": "0b76f3ed88bec950aaf434a052829ab243cd7abb",
         "type": "github"
       },
       "original": {
@@ -661,8 +664,7 @@
         "nixpkgs": [
           "tenzir-devops",
           "std",
-          "haumea",
-          "nixpkgs"
+          "lib"
         ]
       },
       "locked": {
